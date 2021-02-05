@@ -29,8 +29,9 @@ func main() {
 		fmt.Print("CLIENT  : ")
 		text, _ := reader.ReadString('\n')
 		q = append(q, text)
-		//user input is sent to the TCP server over the network
+		
 		fmt.Println("queue is :", q)
+		//user input is sent to the TCP server over the network
 		fmt.Fprintf(c, text+"\n")
 
 		//read the TCP server’s response
